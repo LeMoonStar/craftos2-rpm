@@ -5,8 +5,9 @@ Summary:        Advanced ComputerCraft emulator written in C++
 
 License:        MIT
 URL:            https://www.craftos-pc.cc/
-Source0:        https://github.com/MCJack123/craftos2/archive/refs/tags/v%{version}.tar.gz
-Source1:        https://github.com/MCJack123/craftos2-lua/archive/refs/tags/v%{version}.tar.gz
+Source0:        https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v%{version}.tar.gz
+Source1:        https://github.com/MCJack123/craftos2-lua/archive/v%{version}/craftos2-lua-v%{version}.tar.gz
+
 
 BuildRequires:  make, gcc, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, patchelf, unzip
 
