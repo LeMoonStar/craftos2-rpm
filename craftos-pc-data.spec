@@ -6,7 +6,7 @@ BuildArch:  noarch
 
 URL:        https://github.com/MCJack123/craftos2-rom
 License:    CCPL
-Source0:    https://github.com/MCJack123/craftos2-rom/archive/refs/tags/craftos2-rom-%{version}.tar.gz
+Source0:    https://github.com/MCJack123/craftos2-rom/archive/refs/tags/v%{version}.tar.gz
 
 %description
 
