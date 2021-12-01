@@ -12,13 +12,11 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 
 %prep
 %setup
-ls -la
-cd %{_builddir}
-ls -la
 
 %build
 
 %install
+cd %{_builddir}/craftos-pc-devel-%{version}
 ls -la
 rm -rf $RPM_BUILD_ROOT
 mkdir -p "%{buildroot}%{_includedir}"
