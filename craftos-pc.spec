@@ -7,9 +7,10 @@ License:        MIT
 URL:            https://www.craftos-pc.cc/
 Source0:        https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v%{version}.tar.gz
 Source1:        https://github.com/MCJack123/craftos2-lua/archive/v%{version}/craftos2-lua-v%{version}.tar.gz
+Patch0:         2.6.2wayland_fix.patch
 
 
-BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, patchelf, unzip
+BuildRequires:  make, gcc, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, patchelf, unzip
 
 Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, ncurses, libwebp
 
@@ -19,6 +20,7 @@ Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, nc
 %prep
 %setup -n craftos2-%{version} -q
 %setup -T -D -a 1 -n craftos2-%{version} -q
+%patch0 -p1
 cp -R craftos2-lua-%{version}/* craftos2-lua/
 mkdir icons
 unzip resources/linux-icons.zip -d icons
