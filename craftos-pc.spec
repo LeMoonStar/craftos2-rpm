@@ -38,8 +38,6 @@ mkdir -p "%{buildroot}%{_bindir}"
 DESTDIR="%{buildroot}%{_bindir}" make install
 install -D -m 0755 craftos2-lua/src/liblua.so "%{buildroot}%{_libdir}/libcraftos2-lua.so"
 patchelf --replace-needed craftos2-lua/src/liblua.so libcraftos2-lua.so "%{buildroot}%{_bindir}/craftos"
-mkdir -p "%{buildroot}%{_includedir}"
-cp -R api "%{buildroot}%{_includedir}/CraftOS-PC"
 install -D -m 0644 icons/CraftOS-PC.desktop "%{buildroot}%{_datadir}/applications/CraftOS-PC.desktop"
 install -D -m 0644 icons/16.png "%{buildroot}%{_datadir}/icons/hicolor/16x16/apps/craftos.png"
 install -D -m 0644 icons/24.png "%{buildroot}%{_datadir}/icons/hicolor/24x24/apps/craftos.png"
@@ -50,10 +48,8 @@ install -D -m 0644 icons/96.png "%{buildroot}%{_datadir}/icons/hicolor/96x96/app
 
 %files
 %license LICENSE
-%doc DOCUMENTATION.md
 %{_libdir}/libcraftos2-lua.so
 %{_bindir}/craftos
-%{_includedir}/CraftOS-PC
 %{_datadir}/applications/CraftOS-PC.desktop
 %{_datadir}/icons/hicolor/16x16/apps/craftos.png
 %{_datadir}/icons/hicolor/24x24/apps/craftos.png
