@@ -12,7 +12,7 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 
 %prep
 %setup -n craftos-pc-devel-%{version}
-ls-la
+ls -la
 
 %build
 
