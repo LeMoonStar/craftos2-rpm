@@ -20,7 +20,7 @@ cd %{_builddir}/craftos-pc-devel-%{version}
 ls -la
 rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}/usr/share/craftos
-cp -R ./* %{buildroot}/usr/share/craftos/
+cp -R %{_builddir}/craftos-pc-devel-%{version}/* %{buildroot}/usr/share/craftos/
 
 %files
 /usr/share/craftos/

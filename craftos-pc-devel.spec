@@ -17,10 +17,11 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 
 %install
 cd %{_builddir}/craftos-pc-devel-%{version}
+pwd
 ls -la
 rm -rf $RPM_BUILD_ROOT
 mkdir -p "%{buildroot}%{_includedir}"
-cp -R api "%{buildroot}%{_includedir}/CraftOS-PC"
+cp -R %{_builddir}/craftos-pc-devel-%{version}/api "%{buildroot}%{_includedir}/CraftOS-PC"
 
 %files
 %license LICENSE
