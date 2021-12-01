@@ -12,7 +12,7 @@ Source0:    https://github.com/MCJack123/craftos2-rom/archive/refs/tags/v%{versi
 
 %prep
 ls -la
-%setup -n craftos2-rom-v%{version}
+%setup -n craftos-pc-data-%{version}
 ls -la
 
 %build
