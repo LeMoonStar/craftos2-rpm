@@ -18,6 +18,7 @@ Source0:    https://github.com/MCJack123/craftos2-rom/archive/refs/tags/v%{versi
 %install
 cd %{_builddir}/craftos-pc-devel-%{version}
 ls -la
+ls -la %{_builddir}/craftos-pc-devel-%{version}
 rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}/usr/share/craftos
 cp -R %{_builddir}/craftos-pc-devel-%{version}/* %{buildroot}/usr/share/craftos/

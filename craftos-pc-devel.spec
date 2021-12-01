@@ -19,6 +19,7 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 cd %{_builddir}/craftos-pc-devel-%{version}
 pwd
 ls -la
+ls -la %{_builddir}/craftos-pc-devel-%{version}
 rm -rf $RPM_BUILD_ROOT
 mkdir -p "%{buildroot}%{_includedir}"
 cp -R %{_builddir}/craftos-pc-devel-%{version}/api "%{buildroot}%{_includedir}/CraftOS-PC"
