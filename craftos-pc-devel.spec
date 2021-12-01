@@ -11,12 +11,11 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 %description
 
 %prep
-%setup
+%autosetup
 
 %build
 
 %install
-cd %{_builddir}/craftos-pc-devel-%{version}
 pwd
 ls -la
 ls -la %{_builddir}/craftos-pc-devel-%{version}
