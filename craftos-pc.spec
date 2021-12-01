@@ -10,7 +10,7 @@ Source1:        https://github.com/MCJack123/craftos2-lua/archive/v%{version}/cr
 Patch0:         2.6.2wayland_fix.patch
 
 
-BuildRequires:  make, gcc, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, patchelf, unzip
+BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, patchelf, unzip
 
 Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, ncurses, libwebp
 
