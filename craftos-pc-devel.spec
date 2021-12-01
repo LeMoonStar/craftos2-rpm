@@ -12,11 +12,12 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 
 %prep
 %setup -n craftos-pc-devel-%{version}
-ls -la
+ls -la /builddir/build/BUILD
 
 %build
 
 %install
+ls -la
 rm -rf $RPM_BUILD_ROOT
 mkdir -p "%{buildroot}%{_includedir}"
 cp -R api "%{buildroot}%{_includedir}/CraftOS-PC"
