@@ -11,7 +11,9 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 %description
 
 %prep
-%setup -n craftos2-%{version} -q
+ls -la
+%setup -n craftos2-v%{version} -q
+ls -la
 
 %build
 

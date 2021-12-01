@@ -11,7 +11,9 @@ Source0:    https://github.com/MCJack123/craftos2-rom/archive/refs/tags/v%{versi
 %description
 
 %prep
-%setup -n craftos2-rom-%{version} -q
+ls -la
+%setup -n craftos2-rom-v%{version} -q
+ls -la
 
 %build
 
