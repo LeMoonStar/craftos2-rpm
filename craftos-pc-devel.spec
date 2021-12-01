@@ -11,9 +11,9 @@ Source0:    https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v
 %description
 
 %prep
-ls -la
+ls -la /builddir/build/BUILD
 %setup -n craftos-pc-devel-%{version}
-ls -la
+ls -la /builddir/build/BUILD
 
 %build
 
