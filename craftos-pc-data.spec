@@ -1,12 +1,12 @@
 Name:       craftos-pc-data
-Version:    2.6.2
+Version:    2.6.5
 Release:    1%{dist}
 Summary:    ROM package for CraftOS-PC
 BuildArch:  noarch
 
 URL:        https://github.com/MCJack123/craftos2-rom
 License:    CCPL
-Source0:    https://github.com/MCJack123/craftos2-rom/archive/refs/tags/v%{version}.tar.gz
+Source0:    https://github.com/MCJack123/craftos2-rom/archive/v${version}.tar.gz
 
 %description
 
