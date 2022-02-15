@@ -1,5 +1,5 @@
 Name:       craftos-pc-devel
-Version:    2.6.2
+Version:    2.6.5
 Release:    1%{dist}
 Summary:    Developement headers for CraftOS-PC
 BuildArch:  noarch
