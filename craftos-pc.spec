@@ -1,5 +1,5 @@
 Name:           craftos-pc
-Version:        2.6.5
+Version:        2.6.5.1
 Release:        1%{?dist}
 Summary:        Advanced ComputerCraft emulator written in C++
 
