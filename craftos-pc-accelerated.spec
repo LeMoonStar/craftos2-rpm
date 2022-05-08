@@ -17,7 +17,7 @@ Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, nc
 
 
 %prep
-%setup -n craftos2-%{version}-luiajit -q
+%setup -n craftos2-%{version}-luajit -q
 %setup -T -D -a 1 -n craftos2-%{version}-luajit -q
 cp -R craftos2-luajit-v2.5.4/* craftos2-lua/
 mkdir icons
