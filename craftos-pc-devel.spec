@@ -1,5 +1,5 @@
 Name:       craftos-pc-devel
-Version:    2.7.1
+Version:    2.7.2
 Release:    1%{dist}
 Summary:    Developement headers for CraftOS-PC
 BuildArch:  noarch
