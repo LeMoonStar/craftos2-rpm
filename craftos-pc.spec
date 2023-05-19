@@ -43,6 +43,9 @@ install -D -m 0644 icons/32.png "%{buildroot}%{_datadir}/icons/hicolor/32x32/app
 install -D -m 0644 icons/48.png "%{buildroot}%{_datadir}/icons/hicolor/48x48/apps/craftos.png"
 install -D -m 0644 icons/64.png "%{buildroot}%{_datadir}/icons/hicolor/64x64/apps/craftos.png"
 install -D -m 0644 icons/96.png "%{buildroot}%{_datadir}/icons/hicolor/96x96/apps/craftos.png"
+install -D -m 0644 icons/128.png "%{buildroot}%{_datadir}/icons/hicolor/128x128/apps/craftos.png"
+install -D -m 0644 icons/256.png "%{buildroot}%{_datadir}/icons/hicolor/256x256/apps/craftos.png"
+install -D -m 0644 icons/1024.png "%{buildroot}%{_datadir}/icons/hicolor/1024x1024/apps/craftos.png"
 
 %files
 %license LICENSE
@@ -55,5 +58,8 @@ install -D -m 0644 icons/96.png "%{buildroot}%{_datadir}/icons/hicolor/96x96/app
 %{_datadir}/icons/hicolor/48x48/apps/craftos.png
 %{_datadir}/icons/hicolor/64x64/apps/craftos.png
 %{_datadir}/icons/hicolor/96x96/apps/craftos.png
+%{_datadir}/icons/hicolor/128x128/apps/craftos.png
+%{_datadir}/icons/hicolor/256x256/apps/craftos.png
+%{_datadir}/icons/hicolor/1024x1024/apps/craftos.png
 
 %changelog
