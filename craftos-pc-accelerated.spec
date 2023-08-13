@@ -1,12 +1,12 @@
 Name:           craftos-pc-accelerated
-Version:        2.7.4
+Version:        2.7.5
 Release:        1%{?dist}
 Summary:        Advanced ComputerCraft emulator written in C++, using the LuaJIT engine
 
 License:        MIT
 URL:            https://www.craftos-pc.cc/
 Source0:        https://github.com/MCJack123/craftos2/archive/v%{version}-luajit/craftos2-v%{version}-luajit.tar.gz
-Source1:        https://github.com/MCJack123/craftos2-luajit/archive/v2.5.4/craftos2-luajit-v2.5.4.tar.gz
+Source1:        https://github.com/MCJack123/craftos2-luajit/archive/v2.7.5/craftos2-luajit-v2.7.5.tar.gz
 
 
 BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, unzip
