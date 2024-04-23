@@ -1,5 +1,5 @@
 Name:       craftos-pc-data
-Version:    2.8.1
+Version:    2.8.2
 Release:    1%{dist}
 Summary:    ROM package for CraftOS-PC
 BuildArch:  noarch
