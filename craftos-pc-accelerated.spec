@@ -9,7 +9,7 @@ Source0:        https://github.com/MCJack123/craftos2/archive/v%{version}-luajit
 Source1:        https://github.com/MCJack123/craftos2-luajit/archive/v2.7.5/craftos2-luajit-v2.7.5.tar.gz
 
 
-BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, unzip
+BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, unzip, patchelf
 
 Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, ncurses, libwebp
 
