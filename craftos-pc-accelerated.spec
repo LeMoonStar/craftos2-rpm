@@ -1,6 +1,6 @@
 Name:           craftos-pc-accelerated
 Version:        2.8.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Advanced ComputerCraft emulator written in C++, using the LuaJIT engine
 
 License:        MIT
@@ -32,6 +32,8 @@ make -j$(nproc)
 rm -rf $RPM_BUILD_ROOT
 mkdir -p "%{buildroot}%{_bindir}"
 install -D -m 0755 craftos "%{buildroot}%{_bindir}/craftos-luajit"
+install -D -m 0755 craftos2-luajit/src/libluajit-craftos.so "%{buildroot}%{_libdir}/libcraftos2-luajit.so"
+patchelf --replace-needed craftos2-luajit/src/libluajit-craftos.so libcraftos2-luajit.so "%{buildroot}%{_bindir}/craftos-luajit"
 install -D -m 0644 icons/CraftOS-PC.desktop "%{buildroot}%{_datadir}/applications/CraftOS-PC-Accelerated.desktop"
 install -D -m 0644 icons/16.png "%{buildroot}%{_datadir}/icons/hicolor/16x16/apps/craftos-luajit.png"
 install -D -m 0644 icons/24.png "%{buildroot}%{_datadir}/icons/hicolor/24x24/apps/craftos-luajit.png"
@@ -45,6 +47,7 @@ install -D -m 0644 icons/1024.png "%{buildroot}%{_datadir}/icons/hicolor/1024x10
 
 %files
 %license LICENSE
+%{_libdir}/libcraftos2-luajit.so
 %{_bindir}/craftos-luajit
 %{_datadir}/applications/CraftOS-PC-Accelerated.desktop
 %{_datadir}/icons/hicolor/16x16/apps/craftos-luajit.png
