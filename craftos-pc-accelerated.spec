@@ -1,5 +1,5 @@
 Name:           craftos-pc-accelerated
-Version:        2.8.2
+Version:        2.8.3
 Release:        1%{?dist}
 Summary:        Advanced ComputerCraft emulator written in C++, using the LuaJIT engine
 
