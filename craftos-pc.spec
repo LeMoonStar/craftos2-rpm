@@ -8,6 +8,8 @@ URL:            https://www.craftos-pc.cc/
 Source0:        https://github.com/MCJack123/craftos2/archive/v%{version}/craftos2-v%{version}.tar.gz
 Source1:        https://github.com/MCJack123/craftos2-lua/archive/v%{version}/craftos2-lua-v%{version}.tar.gz
 
+Patch0:		2.8.3-fix-poco.patch
+
 BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, patchelf, unzip
 
 Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, ncurses, libwebp
@@ -22,6 +24,9 @@ cp -R craftos2-lua-%{version}/* craftos2-lua/
 mkdir icons
 unzip resources/linux-icons.zip -d icons
 
+%if 0%{?fedora} >= 42
+%patch 0 -p1
+%endif
 
 %build
 make -C craftos2-lua -j$(nproc) linux

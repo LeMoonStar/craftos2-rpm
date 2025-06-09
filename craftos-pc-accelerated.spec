@@ -8,6 +8,7 @@ URL:            https://www.craftos-pc.cc/
 Source0:        https://github.com/MCJack123/craftos2/archive/v%{version}-luajit/craftos2-v%{version}-luajit.tar.gz
 Source1:        https://github.com/MCJack123/craftos2-luajit/archive/v2.7.5/craftos2-luajit-v2.7.5.tar.gz
 
+Patch0:		2.8.3-fix-poco.patch
 
 BuildRequires:  make, gcc, gcc-c++, SDL2-devel >= 2.0.8, SDL2_mixer-devel, poco-devel, libharu-devel, ncurses-devel, libpng-devel, libwebp-devel, unzip, patchelf
 
@@ -22,6 +23,10 @@ Requires: craftos-pc-data >= 2.5, SDL2 >= 2.0.8, SDL2_mixer, libharu, libpng, nc
 cp -R craftos2-luajit-2.7.5/* craftos2-luajit/
 mkdir icons
 unzip resources/linux-icons.zip -d icons
+
+%if 0%{?fedora} >= 42
+%patch 0 -p1
+%endif
 
 make -C craftos2-luajit -j$(nproc)
 %configure
